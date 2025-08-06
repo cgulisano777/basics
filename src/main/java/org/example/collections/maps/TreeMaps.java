@@ -155,7 +155,7 @@ public class TreeMaps {
      * ConcurrentHashMap has a fine-grained lockage mechanism while TreeMap is not ThreadSafe
      * we need to manually synchronize it
      */
-    public void parallelUpdates() throws InterruptedException {
+    public void parallelUpdates() {
         System.out.println(" ");
         System.out.println("Parallel Execution Starts: ");
 
@@ -173,6 +173,8 @@ public class TreeMaps {
 
             executor.shutdown();
             executor.awaitTermination(1, TimeUnit.MINUTES);
+        } catch (Exception e) {
+            System.out.println("Something went terribly wrong: " + e.getMessage());
         }
 
         long end = System.nanoTime(); // End timer

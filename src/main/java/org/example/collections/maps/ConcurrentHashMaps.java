@@ -51,14 +51,14 @@ public class ConcurrentHashMaps {
      * For comparison same method is used in HashMaps class, there it takes 3ms or fail for lockage while
      * it works and takes 1ms in ConcurrentHashMaps
      */
-    public void parallelUpdates() throws InterruptedException {
+    public void parallelUpdates() {
         System.out.println(" ");
         System.out.println("Parallel Execution Starts: ");
 
-        long start = System.nanoTime(); // Start timer
-
         ConcurrentHashMap<String, Integer> freqMap = new ConcurrentHashMap<>();
         List<String> items = List.of("A", "B", "A", "C", "B", "A", "B", "A", "C", "B", "A", "B", "A", "C", "B", "A", "B", "A", "C", "B", "A");
+
+        long start = System.nanoTime(); // Start timer
 
         try (var executor = Executors.newFixedThreadPool(4)) {
             for (String item : items) {
@@ -67,6 +67,8 @@ public class ConcurrentHashMaps {
 
             executor.shutdown();
             executor.awaitTermination(1, TimeUnit.MINUTES);
+        } catch (Exception e) {
+            System.out.println("Something went terribly wrong: " + e.getMessage());
         }
 
         long end = System.nanoTime(); // End timer

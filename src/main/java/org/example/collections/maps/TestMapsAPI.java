@@ -2,7 +2,7 @@ package org.example.collections.maps;
 
 public class TestMapsAPI {
 
-    public static void hashMaps() throws InterruptedException {
+    public static void hashMaps() {
         System.out.println("---------------------------------------");
         System.out.println(" * * * HashMap * * *");
         var hashMaps = new HashMaps();
@@ -13,7 +13,7 @@ public class TestMapsAPI {
         hashMaps.parallelUpdates();
     }
 
-    public static void concurrentHashMaps() throws InterruptedException {
+    public static void concurrentHashMaps() {
         System.out.println("---------------------------------------");
         System.out.println(" * * * ConcurrentHashMap * * *");
         var concurrentHashMaps = new ConcurrentHashMaps();
@@ -22,7 +22,7 @@ public class TestMapsAPI {
         concurrentHashMaps.parallelUpdates();
     }
 
-    public static void treeMaps() throws InterruptedException {
+    public static void treeMaps() {
         System.out.println("---------------------------------------");
         System.out.println(" * * * TreeMap * * *");
         var treeMaps = new TreeMaps();
@@ -45,9 +45,11 @@ public class TestMapsAPI {
 
     public static void concurrentSkipListMap() {
         System.out.println("---------------------------------------");
-        System.out.println(" * * * ConcurrentHashMap * * *");
+        System.out.println(" * * * ConcurrentSkipListMap * * *");
         var concurrentSkipListMaps = new ConcurrentSkipListMaps();
         concurrentSkipListMaps.waysToCopy();
+        concurrentSkipListMaps.parallelUpdates();
+        concurrentSkipListMaps.descendingMap();
     }
 
     public static void linkedHashMap() {
@@ -79,5 +81,20 @@ public class TestMapsAPI {
         var weakHashMaps = new WeakHashMaps();
 
         weakHashMaps.garbageCollectorRemovesEntry();
+    }
+
+    public static void identityHashMap() {
+        System.out.println("---------------------------------------");
+        System.out.println(" * * * IdentityHashMap * * *");
+        var identityHashMaps = new IdentityHashMaps();
+        identityHashMaps.vsHashMap();
+    }
+
+    public static void enumMap() {
+        System.out.println("---------------------------------------");
+        System.out.println(" * * * EnumMap * * *");
+        var enumMaps = new EnumMaps();
+        enumMaps.example1();
+        enumMaps.example2();
     }
 }

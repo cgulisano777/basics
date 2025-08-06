@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Initializing BasicApp");
 
-        testDifferentMaps();
-//        executeExercises();
+//        testDifferentMaps();
+        executeExercises();
     }
 
     /**
@@ -23,7 +23,9 @@ public class Main {
 //        TestMapsAPI.linkedHashMap();
 //        TestMapsAPI.sequencedMap();
 //        TestMapsAPI.weakMap();
-        TestMapsAPI.concurrentSkipListMap();
+//        TestMapsAPI.concurrentSkipListMap();
+//        TestMapsAPI.identityHashMap();
+        TestMapsAPI.enumMap();
     }
 
     /**
@@ -37,6 +39,7 @@ public class Main {
 //        practiceApi.execute(P002);
 //        practiceApi.execute(P003);
 //        practiceApi.execute(P004);
-        practiceApi.execute(P005); //todo not started
+//        practiceApi.execute(P005);
+        practiceApi.execute(P006);
     }
 }
