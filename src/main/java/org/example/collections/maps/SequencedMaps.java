@@ -6,7 +6,7 @@ import java.util.SequencedMap;
 
 public class SequencedMaps {
     /**
-     * ✅ Best practice (if clarity matters):
+     * Best practice (if clarity matters):
      * If your primary goal is to use removeEldestEntry() (for LRU-like caching), keep your reference type as LinkedHashMap.
      *
      * If you're writing general-purpose code and want to leverage sequencing features (like reverse views), use SequencedMap.
