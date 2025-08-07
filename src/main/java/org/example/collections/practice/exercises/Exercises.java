@@ -6,11 +6,15 @@ public enum Exercises {
     P003("Grouping into Maps"),
     P004("Sorting"),
     P005("Track Object Identity vs Logical Equality"),
-    P006(""),
-    P007(""),
-    P008(""),
-    P009(""),
-    P010("");
+    P006("Enum Maps"),
+    P007("Filtering a List by coincidence"),
+    P008("Filtering a Tree by coincidence"),
+    P009("Filtering a Tree by coincidence - Using Map this time"),
+    P010("Filtering a Tree by coincidence - Using Threads this time"),
+    P011("ParkingLot App exercise"),
+    P012(""),
+    P013(""),
+    P014("");
 
     public final String description;
 

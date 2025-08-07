@@ -40,6 +40,9 @@ public class Main {
 //        practiceApi.execute(P003);
 //        practiceApi.execute(P004);
 //        practiceApi.execute(P005);
-        practiceApi.execute(P006);
+//        practiceApi.execute(P006);
+//        practiceApi.execute(P007);
+//        practiceApi.execute(P008);
+        practiceApi.execute(P009);
     }
 }
