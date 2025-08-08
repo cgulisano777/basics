@@ -12,7 +12,7 @@ public enum Exercises {
     P009("Filtering a Tree by coincidence - Using Map this time"),
     P010("Filtering a Tree by coincidence - Using Threads this time"),
     P011("ParkingLot App exercise"),
-    P012(""),
+    P012("Library App exercise"),
     P013(""),
     P014("");
 
