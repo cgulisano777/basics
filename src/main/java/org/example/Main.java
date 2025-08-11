@@ -3,6 +3,7 @@ package org.example;
 import org.example.collections.maps.TestMapsAPI;
 import org.example.collections.practice.PracticeAPI;
 
+
 import static org.example.collections.practice.exercises.Exercises.*;
 
 public class Main {
@@ -25,7 +26,7 @@ public class Main {
 //        TestMapsAPI.weakMap();
 //        TestMapsAPI.concurrentSkipListMap();
 //        TestMapsAPI.identityHashMap();
-        TestMapsAPI.enumMap();
+//        TestMapsAPI.enumMap();
     }
 
     /**
@@ -46,6 +47,6 @@ public class Main {
 //        practiceApi.execute(P009);
 //        practiceApi.execute(P010); // todo pending!
 //        practiceApi.execute(P011);
-        practiceApi.execute(P012);
+//        practiceApi.execute(P012);
     }
 }
